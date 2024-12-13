@@ -1,11 +1,17 @@
 {
   "name": "my-parcel-app",
-  "source": "index.html",
+  "source": [
+    "./src/index.html",
+    "./src/journal.html"
+  ],
   "scripts": {
     "dev": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.13.2"
+    "autoprefixer": "^10.4.20",
+    "parcel": "^2.13.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
   }
 }

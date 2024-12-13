@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top" class="flex flex-col min-h-screen bg-gray-900 text-gray-200">
+    <!-- START HEADER -->
+    <header
+      class="flex justify-center items-center gap-12 mb-5 p-10 text-white"
+    >
+      <h1 class="text-3xl">🍿 Movie Diary</h1>
+      <nav class="">
+        <ul class="flex pt-2">
+          <li class="px-4 hover:underline hover:text-yellow-400">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="px-4 hover:underline hover:text-yellow-400">
+            <a href="journal.html">Journal</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+    <main class="flex-grow flex-1 container mx-auto p-4">
+      <!-- Navigation -->
+      <nav
+        class="mb-6 flex justify-between items-center bg-gray-800 text-white px-4 py-2 rounded shadow-md"
+      >
+        <h1 class="text-lg font-semibold">My Favorite Movies</h1>
+        <a
+          href="index.html"
+          class="text-sm font-medium hover:underline text-yellow-400"
+          >Back to Homepage</a
+        >
+      </nav>
+
+      <!-- Favorites Container -->
+      <section
+        id="favorites-container"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></section>
+    </main>
+    <!-- START FOOTER -->
+    <footer
+      class="flex flex-col items-center justify-center gap-4 p-6 bg-gray-800 text-white text-sm"
+    >
+      <div class="flex flex-wrap justify-center gap-12">
+        <p>🍿 Movie Diary</p>
+        <p>Copyright © 2024</p>
+        <p>
+          <a href="#top" class="hover:underline hover:text-yellow-400"
+            >Back to top</a
+          >
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms of Service</a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8 text-gray-400 text-xs">
+        <p>Follow us on:</p>
+        <a href="#" class="hover:text-yellow-400">Facebook</a>
+        <a href="#" class="hover:text-yellow-400">Twitter</a>
+        <a href="#" class="hover:text-yellow-400">Instagram</a>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="journal.js"></script>
+  </body>
+</html>
