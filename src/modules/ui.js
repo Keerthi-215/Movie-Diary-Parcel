@@ -24,11 +24,11 @@ export const createMovieCard = (movie) => {
         class="w-40 h-60 object-cover rounded-md mb-3"
       />
       <h2 class="text-lg color text-white font-bold mb-2 text-center">${title}</h2>
-      <p class="text-sm text-gray-400 mb-3">${
+      <p class="text-sm text-gray-400 mb-auto">${
         overview || "No description available."
       }</p>
       <button
-        class="bg-yellow-400 text-black px-4 py-2 rounded-md font-bold hover:bg-yellow-500 active:bg-yellow-300 add-to-favorite"
+        class="bg-yellow-400 text-black px-4 py-2 rounded-md font-bold hover:bg-yellow-500 active:bg-yellow-300 add-to-favorite mt-4"
         data-id="${id}"
         data-title="${title}"
         data-poster="${imagePath}"
